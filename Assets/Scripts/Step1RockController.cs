@@ -22,9 +22,9 @@ public class Step1RockController : MonoBehaviour
 
     void SetStats()
     {
-        smallRock = GameObject.Find("RockStandin_small");
-        mediumRock = GameObject.Find("RockStandin_medium");
-        largeRock = GameObject.Find("RockStandin_large");
+        smallRock = GameObject.Find("rock_small");
+        mediumRock = GameObject.Find("rock_medium");
+        largeRock = GameObject.Find("rock_large");
         rockNameInput = GameObject.Find("InputName");
         InputField rockNameInputField = rockNameInput.GetComponent<InputField>();
 
