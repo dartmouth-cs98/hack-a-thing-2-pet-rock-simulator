@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         string type = PlayerStats.TypeOfRock;
-        //string type = "rock_medium";
+       // string type = "rock_medium";
         if (type == "rock_small")
         {
             player = GameObject.Find("rock_small_prefab(Clone)");
