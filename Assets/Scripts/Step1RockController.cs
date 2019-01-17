@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Step1RockController : MonoBehaviour
 {
@@ -53,6 +54,8 @@ public class Step1RockController : MonoBehaviour
         Debug.Log("Playerstats: ");
         Debug.Log("name: " + PlayerStats.RockName);
         Debug.Log("rock type: " + PlayerStats.TypeOfRock);
+
+        SceneManager.LoadScene("step_2");
     }
 }
 

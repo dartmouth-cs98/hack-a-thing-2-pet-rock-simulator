@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class PlayerStats 
+public static class PlayerStats
 {
     private static string rockName;
     private static string typeOfRock;

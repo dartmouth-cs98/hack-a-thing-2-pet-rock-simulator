@@ -17,28 +17,28 @@ public class spawn_Rock : MonoBehaviour
     {
         string rock_Name=PlayerStats.RockName;
         string type_rock = PlayerStats.TypeOfRock;
-        //string type_rock = "REMOVE";
+       // string type_rock = "REMOVE";
         ArrayList accessories = PlayerStats.Accessories;
 
         if (type_rock == "rock_small")
         {
 
-            rock = Instantiate(rock_small_prefab,Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
+            rock = Rigidbody.Instantiate(rock_small_prefab,Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
 
         }
         else if (type_rock == "rock_medium")
         {
            
-            rock = Instantiate(rock_medium_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
+            rock = Rigidbody.Instantiate(rock_medium_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
         }
         else
         {
          
-        rock = Instantiate(rock_large_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
+        rock = Rigidbody.Instantiate(rock_large_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
         }
 
 
-        //rock = Instantiate(rock_medium_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
+      //  rock = Instantiate(rock_medium_prefab, Rock_instantiation.position, Rock_instantiation.rotation) as Rigidbody;
 
     }
     void FixedUpdate()
